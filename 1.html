@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {margin:5px;color:rgb(127,185,255)}
+        .a {font-style:normal};
+        .b {font-style:italic};
+        .c {font-style:oblique};
+        .d {font-style:oblique 60deg};
+        .underline-solid {
+      text-decoration: underline;
+      text-decoration-color: red;
+      text-decoration-thickness: 6px;
+    }
+
+    .underline-wavy {
+      text-decoration: underline wavy green;
+      text-decoration-thickness: 4px;
+    }
+
+    .underline-highlight {
+      background: linear-gradient(to top, rgba(255, 128, 0, 0.6) 50%, transparent 50%);
+      display: inline;
+    }
+
+    .underline-wave-shape {
+      position: relative;
+      display: inline-block;
+    }
+
+    .underline-wave-shape::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1em;
+      background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 10 Q 10 0, 20 10 T 40 10 T 60 10 T 80 10 T 100 10" fill="none" stroke="blue" stroke-width="5"/></svg>') repeat-x;
+      background-size: 100px 20px;
+      pointer-events: none;
+    }
+    </style>
+</head>
+<body>
+    <h3>文字風格案例</h3>
+    <p class="h3">今天天氣很好</p>
+    <a class="h3>">今天天氣很好</a>
+    <b class="h3">今天天氣很好</b>
+    <c class="h3">今天天氣很好</c>
+    <d class="h3">今天天氣很好</d>
+
+    <p class="underline-solid">今天天氣真好!!</p>
+  <p class="underline-wavy">今天天氣真好!!</p>
+  <p class="underline-highlight">今天天氣真好!!</p>
+  <p class="underline-wave-shape">今天天氣真好!!</p>
+</body>
+</html>
